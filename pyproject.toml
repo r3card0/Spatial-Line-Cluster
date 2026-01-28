@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spatial-line-cluster"
+version = "0.1.0"
+description = "A Python tool for clustering geometries based on spatial proximity."
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+    {name = "r3card0",email = "ricardo.rdz@protonmail.com"}
+]
+
+dependencies = [
+    "geopandas>=1.1.2",
+    "networkx>=3.4.2"
+]
+
+license = {file = "MIT License"}
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
